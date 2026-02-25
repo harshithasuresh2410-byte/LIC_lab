@@ -1,4 +1,4 @@
-Course: BEC456B - Linear Integrated Circuits
+Course: BEC456B - Linear Integrated Circuits.
 
 High-Performance PMOS Common Source Amplifier Design.
 
