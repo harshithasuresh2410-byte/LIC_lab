@@ -1,5 +1,10 @@
-  __Course: BEC456B - Linear Integrated Circuits.__
-  __Technnology node : tsmc 180nm.__
+**Name : Harshitha S**
+
+**USN  : 4NI24EC051**
+
+__Course: BEC456B - Linear Integrated Circuits.__
+
+__Technnology node : tsmc 180nm.__
 
  #                                           High-Performance PMOS Common Source Amplifier Design.
 
