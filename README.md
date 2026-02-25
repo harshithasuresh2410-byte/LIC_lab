@@ -1,50 +1,55 @@
-Course: BEC456B - Linear Integrated Circuits.
+                                               Course: BEC456B - Linear Integrated Circuits.
 
-High-Performance PMOS Common Source Amplifier Design.
+                                                      Technnology node : tsmc 180nm.
 
-Technnology node : tsmc 180nm.
+                                            High-Performance PMOS Common Source Amplifier Design.
 
-Introduction : This project involves the design and evaluation of a Common Source (CS) Amplifier using a PMOS transistor. 
-By utilizing the 180nm CMOS process, the design achieves a specific quiescent point and gain while strictly adhering to a 1mW power budget. 
-This repository documents the transition from theoretical calculations to practical LTspice verification.
 
-Design Parameters & Mathematical Derivations:
+1. Introduction : 
 
-Using the provided constraints, the circuit was designed with the following values:
+     This project involves the design and evaluation of a Common Source (CS) Amplifier using a PMOS transistor. 
+     By utilizing the 180nm CMOS process, the design achieves a specific quiescent point and gain while strictly adhering to a 1mW power budget. 
+     This repository documents the transition from theoretical calculations to practical LTspice verification.
 
-Supply Voltage ($V_{DD}$): 1.8V
+2. Design Parameters & Mathematical Derivations:
 
-Drain Current ($I_D$): 200µA
+     Using the provided constraints, the circuit was designed with the following values:
 
-Power Dissipation ($P$): 0.36mW (Verified - Well below the 1mW limit)
+     Supply Voltage ($V_{DD}$): 1.8V
 
-Load Resistance ($R_d$): 4.5kohm
+     Drain Current ($I_D$): 200µA
 
-Transistor Dimensions: $W = 5.18144\mu m$,
-$L = 180nm$
+     Power Dissipation ($P$): 0.36mW (Verified - Well below the 1mW limit)
 
-Simulation Methodology & Results:
+     Load Resistance ($R_d$): 4.5kohm
 
-1. Circuit Schematic : The design uses a PMOS (M1) in a common source configuration with a resistive load $R_d$.
+     Transistor Dimensions: $W = 5.18144\mu m$,
+      $L = 180nm$
 
-2. DC Operating Point Analysis :
+3. Simulation Methodology & Results:
 
-  Verified through simulation that the transistor is in the Saturation Region: 
+    1. Circuit Schematic :
+        The design uses a PMOS (M1) in a common source configuration with a resistive load $R_d$.
 
-  Output Voltage : 0.900022 V
+    2. DC Operating Point Analysis :
 
-  Drain Current  : 200.0005 µA
+         Verified through simulation that the transistor is in the Saturation Region: 
 
-3. Transient & AC Analysis
+         Output Voltage : 0.900022 V
+ 
+         Drain Current  : 200.0005 µA
 
-   Phase Relationship: A 180 degree phase shift was observed, confirming CS operation.
+    3. Transient & AC Analysis
 
-   Practical Gain   : 10.4263 dB
+         Phase Relationship: A 180 degree phase shift was observed, confirming CS operation.
 
-   Theoretical Gain : 10.95404 dB
+         Practical Gain   : 10.4263 dB
 
-Conclusion
+         Theoretical Gain : 10.95404 dB
 
-The design successfully meets all requirements and power constraints. 
-The minor 4.8% deviation in gain is attributed to the channel length modulation effect of the 180nm PMOS mode
+4. Conclusion 
+
+     The design successfully meets all requirements and power constraints. 
+   
+     The minor 4.8% deviation in gain is attributed to the channel length modulation effect of the 180nm PMOS mode
    
