@@ -45,6 +45,6 @@ Simulation Methodology & Results:
 
 Conclusion
 
-The design successfully meets all academic requirements and power constraints. 
+The design successfully meets all requirements and power constraints. 
 The minor 4.8% deviation in gain is attributed to the channel length modulation effect of the 180nm PMOS mode
    
