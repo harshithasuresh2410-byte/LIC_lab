@@ -1,8 +1,8 @@
 Course: BEC456B - Linear Integrated Circuits
 
-High-Performance PMOS Common Source Amplifier Design
+High-Performance PMOS Common Source Amplifier Design.
 
-Technnology node : tsmc 180nm
+Technnology node : tsmc 180nm.
 
 Introduction : This project involves the design and evaluation of a Common Source (CS) Amplifier using a PMOS transistor. 
 By utilizing the 180nm CMOS process, the design achieves a specific quiescent point and gain while strictly adhering to a 1mW power budget. 
