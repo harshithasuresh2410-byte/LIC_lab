@@ -13,7 +13,7 @@ To design and analyze three Common Source (CS) amplifier configurations using **
 
 
 ### 1.2 Theoretical Calculations
-* **Transconductance ($g_m$):** $g_m = \sqrt{2\mu_n C_{ox} \frac{W}{L} I_D}$
+* **Transconductance ($g_m$):** $g_m = \frac{2I_D}{V_{OV}}$$
 * **Voltage Gain ($A_v$):** $$A_v = \frac{-g_{m1} \cdot R_D}{1 + g_{m1} \cdot R_S}$$
 * **Input/Output Swing:** Limited by $V_{ov}$ and $I_D \cdot R_S$.
 
@@ -26,7 +26,7 @@ To design and analyze three Common Source (CS) amplifier configurations using **
     * **Gain:** $11.22 V/V$
     <img width="1919" height="800" alt="transient ckt1" src="https://github.com/user-attachments/assets/f05944ac-3d1d-4c2d-b37e-a2cb30a65f97" />
 
-* **AC Analysis:** * **3dB Bandwidth:** $203.52 MHz$
+* **AC Analysis:**  **3dB Bandwidth:** $203.52 MHz$
     * **UGB:** $2.28 GHz$
     <img width="1919" height="793" alt="AC Analysis ckt1" src="https://github.com/user-attachments/assets/8fe216c0-89cd-43ab-9ad5-b14ff2953fe2" />
 
@@ -42,7 +42,7 @@ To design and analyze three Common Source (CS) amplifier configurations using **
 ### 2.2 Theoretical Calculations
 * **Output Resistance ($R_{out}$):** $R_{out} = r_{o1} \parallel r_{o2}$
 * **Voltage Gain ($A_v$):**
-$$A_v = -g_{m1} (r_{o1} \parallel r_{o2})$$
+$$A_v = \frac{-g_m \cdot R_D}{1 + g_m \cdot R_S}$$
 
 ### 2.3 Simulation Results
 * **DC Analysis:** Used to fix $V_{bias}$ for the PMOS to maintain $200\mu A$ current.
@@ -67,7 +67,7 @@ $$A_v = -g_{m1} (r_{o1} \parallel r_{o2})$$
 ### 3.2 Theoretical Calculations
 * **Load Resistance:** $R_L = \frac{1}{g_{m3}}$
 * **Voltage Gain ($A_v$):**
-$$A_v \approx -\frac{g_{m1}}{g_{m3}} = -\sqrt{\frac{(W/L)_1}{(W/L)_3}}$$
+$$A_v = \frac{-g_m \cdot R_D}{1 + g_m \cdot R_S}$$
 
 ### 3.3 Simulation Results
 * **DC Analysis:** <img width="953" height="785" alt="ckt3 DC" src="https://github.com/user-attachments/assets/160fa4be-6aac-461f-85d7-a20b2f89a76d" />
@@ -82,15 +82,15 @@ $$A_v \approx -\frac{g_{m1}}{g_{m3}} = -\sqrt{\frac{(W/L)_1}{(W/L)_3}}$$
 
 ---
 
-## 📈 Final Performance Comparison
+## Final Performance Comparison
 
-| Configuration | Gain ($A_v$) | 3dB BW | UGB ||
-| :--- | :---: | :---: | :---: | :---: |
+| Configuration | Gain ($A_v$) | 3dB BW | UGB |
+| :--- | :---: | :---: | :---: |
 | **Source Degeneration** | 11.22 | 203.52 MHz | 2.28 GHz |
 | **Active Load** | **14.67** | **422.31 MHz** | **6.19 GHz** |
 | **Diode-Connected** | 4.13 | 140.92 MHz | 582.45 MHz |
 
 ---
 
-## 💡 Conclusion
+## Conclusion
 From the analysis, **Configuration B (Active Load)** is the most efficient for high-performance integrated circuits, providing the highest gain and bandwidth. **Configuration A** offers a balanced approach with improved linearity, while **Configuration C** is suitable for process-insensitive gain requirements.
